@@ -1,0 +1,437 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    background: url(image/starBig.svg) no-repeat right top,
+        url(image/Star2.svg) no-repeat 5% 94px,
+        url(image/Star3.svg) no-repeat 10% 59px,
+        url(image/Star\ 4.svg) no-repeat 75% 85%,
+        url(image/Star\ 5.svg) no-repeat 68% 70%;
+    background-color: rgb(225, 255, 143);
+}
+
+
+.header__box {
+    padding-top: 196px;
+    max-width: 768px;
+    padding-bottom: 156px;
+}
+
+.header__heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    padding-bottom: 24px;
+    color: rgb(32, 32, 39);
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.header__text {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 48px;
+}
+
+.header__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 247px;
+    height: 66px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    background: rgb(255, 255, 255);
+
+}
+
+.header__line {
+    background-color: rgb(188, 236, 48);
+    height: 90px;
+    width: 100%;
+    background-image: url(image/line.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+
+}
+
+.line-mobil {
+    display: none;
+}
+
+.main {
+    background: url(image/starMain.svg) 100% 65px,
+        url(image/Star\ 8.svg)no-repeat 97% 4900px,
+        url(image/Star\ 10.svg) no-repeat 93% 4960px,
+        url(image/Star\ 11.svg) no-repeat 2% 750px,
+        url(image/Star\ 12.svg) no-repeat calc(100% - 300px);
+    background-color: rgb(32, 32, 39);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.collection-games__title {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    padding-bottom: 24px;
+    padding-top: 94px;
+}
+
+.collection-games__text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 72px;
+}
+
+.game-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-bottom: 50px;
+}
+
+.card_one {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: all 0.5s;
+    width: 378px;
+    height: 473px;
+}
+
+.card_one:hover {
+    transform: scale(1.1);
+}
+
+.card_two {
+    width: 378px;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.card_two:hover {
+    transform: scale(1.1);
+}
+
+.card_three {
+    width: 378px;
+    height: 551px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.card_three:hover {
+    transform: scale(1.1);
+}
+
+.card__image {
+    height: 314px;
+
+}
+
+.card__info_one {
+    width: 378px;
+    height: 159px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+}
+
+.card__info_two {
+    width: 314px;
+    height: 130px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+}
+
+.card__info_three {
+    width: 314px;
+    height: 169px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+
+}
+
+.card__number {
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    width: 108px;
+    height: 36px;
+    color: rgb(39, 26, 88);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card__name {
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 36px;
+
+}
+
+.game-number {
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    width: 108px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.games-mobile {
+    display: none;
+}
+
+.footer {
+    background: rgb(189, 237, 53);
+}
+
+.footer__title {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.mini-games {
+    background-color: rgb(32, 32, 39);
+    padding-bottom: 144px;
+}
+
+.mini-games__title {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 72px;
+    padding-top: 46px;
+
+}
+
+.game-cart {
+    width: 1200px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.game-cart__info {
+    width: 504px;
+    height: 249px;
+    padding-left: 48px;
+    padding-top: 48px;
+    padding-right: 48px;
+
+}
+
+
+.game-cart__name {
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    margin-bottom: 24px;
+}
+
+.game-cart__condition {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.game-cart__button {
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 247px;
+    height: 66px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.game-cart__button:hover {
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .collection-games__title {
+        display: none;
+    }
+
+    .collection-games__text {
+        display: none;
+    }
+
+    .game-preview {
+        display: none;
+    }
+
+    .game-cart {
+        width: 650px;
+        height: 250px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+
+    .game-cart__image {
+        width: 300px;
+        height: 250px;
+
+    }
+
+    .game-cart__info {
+        width: 300px;
+        height: 200px;
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .game-cart__name {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 39px;
+        margin-bottom: 5px;
+
+    }
+
+    .game-cart__condition {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 7px;
+    }
+
+    .game-cart__button {
+        width: 285px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141%;
+        text-align: center;
+
+    }
+
+    .main {
+        background-image: none;
+    }
+
+
+    .mini-games__cart {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+}

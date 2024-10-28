@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    background: url(image/starBig.svg) no-repeat right top,
+        url(image/Star2.svg) no-repeat 5% 94px,
+        url(image/Star3.svg) no-repeat 10% 59px,
+        url(image/Star\ 4.svg) no-repeat 75% 85%,
+        url(image/Star\ 5.svg) no-repeat 68% 70%;
+    background-color: rgb(225, 255, 143);
+
+    &__box {
+        padding-top: 196px;
+        max-width: 768px;
+        padding-bottom: 156px;
+    }
+
+    &__heading {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-bottom: 24px;
+        color: rgb(32, 32, 39);
+        text-align: left;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        width: 247px;
+        height: 66px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        font-family: inherit;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+        }
+    }
+
+    &__line {
+        background-color: rgb(188, 236, 48);
+        height: 90px;
+        width: 100%;
+        background-image: url(image/line.png);
+        background-repeat: repeat-x;
+        background-position: 0 0;
+    }
+}
+
+.line-mobil {
+    display: none;
+}
+
+.main {
+    background: url(image/starMain.svg) 100% 65px,
+        url(image/Star\ 8.svg) no-repeat 97% 4900px,
+        url(image/Star\ 10.svg) no-repeat 93% 4960px,
+        url(image/Star\ 11.svg) no-repeat 2% 750px,
+        url(image/Star\ 12.svg) no-repeat calc(100% - 300px);
+    background-color: rgb(32, 32, 39);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    .collection-games {
+        &__title {
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            text-align: left;
+            padding-bottom: 24px;
+            padding-top: 94px;
+        }
+
+        &__text {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            padding-bottom: 72px;
+        }
+    }
+
+    .game-preview {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        padding-bottom: 50px;
+
+        .card {
+
+            &_one,
+            &_two,
+            &_three {
+                background-color: rgb(255, 255, 255);
+                border-radius: 30px;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &_one {
+                width: 378px;
+                height: 473px;
+            }
+
+            &_two {
+                width: 378px;
+                height: 512px;
+            }
+
+            &_three {
+                width: 378px;
+                height: 551px;
+            }
+
+            &__image {
+                height: 314px;
+            }
+
+            &__info {
+
+                &_one,
+                &_two,
+                &_three {
+                    padding-left: 32px;
+                    padding-top: 32px;
+                    padding-right: 32px;
+                    padding-bottom: 36px;
+                }
+
+                &_one {
+                    width: 378px;
+                    height: 159px;
+                }
+
+                &_two {
+                    width: 314px;
+                    height: 130px;
+                }
+
+                &_three {
+                    width: 314px;
+                    height: 169px;
+                }
+            }
+
+            &__number {
+                border-radius: 52.58px;
+                background: rgb(247, 247, 247);
+                width: 108px;
+                height: 36px;
+                color: rgb(39, 26, 88);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 110%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            &__name {
+                color: rgb(32, 32, 39);
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                text-align: left;
+                padding-bottom: 36px;
+            }
+        }
+    }
+}
+
+.footer {
+    background: rgb(189, 237, 53);
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.mini-games {
+    background-color: rgb(32, 32, 39);
+    padding-bottom: 144px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-bottom: 72px;
+        padding-top: 46px;
+    }
+
+    .game-cart {
+        width: 1200px;
+        height: 500px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+
+        &__info {
+            width: 504px;
+            height: 249px;
+            padding-left: 48px;
+            padding-top: 48px;
+            padding-right: 48px;
+        }
+
+        &__name {
+            color: rgb(32, 32, 39);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            margin-bottom: 24px;
+        }
+
+        &__condition {
+            color: rgb(32, 32, 39);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 36px;
+        }
+
+        &__button {
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            width: 247px;
+            height: 66px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            font-family: inherit;
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(0, 0, 0);
+                border: 1px solid rgb(0, 0, 0);
+                background: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@import 'mobile';

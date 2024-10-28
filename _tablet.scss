@@ -1,0 +1,76 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .collection-games__title,
+    .collection-games__text,
+    .game-preview {
+        display: none;
+    }
+
+    .game-cart {
+        width: 650px;
+        height: 250px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        &__image {
+            width: 300px;
+            height: 250px;
+        }
+
+        &__info {
+            width: 300px;
+            height: 200px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &__name {
+                color: rgb(32, 32, 39);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 39px;
+                margin-bottom: 5px;
+            }
+
+            &__condition {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+                margin-bottom: 7px;
+            }
+
+            &__button {
+                width: 285px;
+                height: 45px;
+                color: rgb(255, 255, 255);
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 141%;
+                text-align: center;
+            }
+        }
+    }
+
+    .main {
+        background-image: none;
+    }
+
+    .mini-games__cart {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
